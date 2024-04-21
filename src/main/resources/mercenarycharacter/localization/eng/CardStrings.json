@@ -37,5 +37,17 @@
     "NAME": "Resolution",
     "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
     "UPGRADE_DESCRIPTION": "Gain !M! Vigor. NL At the start of your turn, gain !M! Vigor."
+  },
+  "${modID}:ChargeAhead": {
+    "NAME": "Charge Ahead!",
+    "DESCRIPTION": "Gain !M! Momentum."
+  },
+  "${modID}:Breather": {
+    "NAME": "Breather",
+    "DESCRIPTION": "Lose !M! Momentum NL Gain !B! Block."
+  },
+  "${modID}:Buttspike": {
+    "NAME": "Buttspike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Vigor."
   }
 }

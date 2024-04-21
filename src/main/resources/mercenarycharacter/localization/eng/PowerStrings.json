@@ -11,5 +11,11 @@
       "At the start of your turn, NL gain #b",
       " #yVigor."
     ]
+  },
+  "${modID}:MomentumPower": {
+    "NAME": "Momentum",
+    "DESCRIPTIONS": [
+      "Your next Attack deals, #b%d additional damage. NL Gain upto #y%d stacks."
+    ]
   }
 }
