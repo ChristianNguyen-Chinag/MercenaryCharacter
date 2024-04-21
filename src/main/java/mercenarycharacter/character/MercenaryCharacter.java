@@ -10,11 +10,6 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.Defend_Blue;
-import com.megacrit.cardcrawl.cards.green.Neutralize;
-import com.megacrit.cardcrawl.cards.purple.WreathOfFlame;
-import com.megacrit.cardcrawl.cards.red.Inflame;
-import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -22,12 +17,12 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import mercenarycharacter.cards.attack.DualStrike;
 import mercenarycharacter.cards.attack.Strike;
 import mercenarycharacter.cards.skill.Defend;
 import mercenarycharacter.cards.skill.Mettle;
+import mercenarycharacter.relics.CeremonialHelm;
 
 import java.util.ArrayList;
 
@@ -144,7 +139,7 @@ public class MercenaryCharacter extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(CeremonialHelm.ID);
 
         return retVal;
     }

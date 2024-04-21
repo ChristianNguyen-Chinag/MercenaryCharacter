@@ -5,5 +5,12 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:CeremonialHelm": {
+    "NAME": "Ceremonial Helmet",
+    "FLAVOR": "Good thing her head is out of reach for most.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b%d #ystslib:Temporary_HP."
+    ]
   }
 }
