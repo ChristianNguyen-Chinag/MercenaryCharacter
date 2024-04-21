@@ -1,5 +1,6 @@
 package mercenarycharacter.powers;
 
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -16,12 +17,36 @@ public class MomentumPower extends BasePower{
     protected int MAX_STACKS = 10;
 
     public MomentumPower(AbstractCreature owner, int amount) {
+
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-        this.amount = amount;
-        if (this.amount >= MAX_STACKS)
-            this.amount = 10;
-        if (this.amount <= 0)
+    }
+
+    @Override
+    public void stackPower(int stackAmount){
+        this.fontScale=8.0F;
+
+        this.amount += stackAmount;
+
+        if (this.amount >= MAX_STACKS) {
+            this.amount = MAX_STACKS;
+        }
+
+    }
+
+    @Override
+    public void reducePower(int reduceAmount){
+
+
+        this.fontScale=8.0F;
+
+        this.amount -= reduceAmount;
+
+        if (this.amount <= 0){
             this.amount = 0;
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        }
+
+
 
     }
 
@@ -31,7 +56,8 @@ public class MomentumPower extends BasePower{
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            this.flash();
+            flash();
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
 
     }

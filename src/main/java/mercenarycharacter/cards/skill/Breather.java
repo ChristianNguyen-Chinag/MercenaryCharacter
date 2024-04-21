@@ -10,7 +10,7 @@ import mercenarycharacter.powers.MomentumPower;
 import mercenarycharacter.util.CardStats;
 
 public class Breather extends BaseCard {
-        private static final int MOMENTUM = -4;
+        private static final int MOMENTUM = 3;
         private static final int BLOCK = 8;
         private static final int UPG_BLOCK = 3;
 
@@ -33,7 +33,7 @@ public class Breather extends BaseCard {
 
         @Override
         public void use(AbstractPlayer p, AbstractMonster m) {
-            addToBot(new ApplyPowerAction(p, p, new MomentumPower(p, magicNumber)));
+            addToBot(new ApplyPowerAction(p, p, new MomentumPower(p, -magicNumber)));
             addToBot(new GainBlockAction(p, p, block));
         }
 }
