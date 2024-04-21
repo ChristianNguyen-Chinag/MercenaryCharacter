@@ -1,0 +1,41 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${modID}:DualStrike": {
+    "NAME": "Dual Strike",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "${modID}:Mettle": {
+    "NAME": "Mettle",
+    "DESCRIPTION": "Take 3 damage. NL Gain !M! stslib:Temporary_HP"
+  },
+  "${modID}:Flourish": {
+    "NAME": "Flourish",
+    "DESCRIPTION": "Gain !M! Vigor."
+  },
+  "${modID}:QuickLunch": {
+    "NAME": "Quick Lunch",
+    "DESCRIPTION": "Gain !M! stslib:Temporary_HP NL Exhaust."
+  },
+  "${modID}:Resolution": {
+    "NAME": "Resolution",
+    "DESCRIPTION": "At the start of your turn, gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Vigor. NL At the start of your turn, gain !M! Vigor."
+  }
+}
